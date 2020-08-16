@@ -1,0 +1,206 @@
+.home-page {
+    h1 {
+        color: cornsilk;
+    }
+
+    span {
+        font-weight: lighter;
+    }
+
+    .main-page {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 20rem;
+        background-image: url("/img/home-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    // frame window
+    #frame-top,
+    #frame-bottom,
+    #frame-left,
+    #frame-right {
+        background: #fff;
+        position: fixed;
+    }
+
+    #frame-left,
+    #frame-right {
+        top: 0;
+        bottom: 0;
+        width: 18px;
+    }
+
+    #frame-left {
+        left: 0;
+    }
+
+    #frame-right {
+        right: 0;
+    }
+
+    #frame-top,
+    #frame-bottom {
+        left: 0;
+        right: 0;
+        height: 18px;
+    }
+
+    #frame-top {
+        top: 0;
+    }
+
+    #frame-bottom {
+        bottom: 0;
+    }
+
+
+    .title {
+        display: block;
+        font-weight: 100;
+        font-size: 70px;
+        color: cornsilk;
+        letter-spacing: 1px;
+    }
+
+    .logo {
+        max-width: 100px;
+        margin-bottom: 6rem;
+    }
+
+    .nav-bar {
+        display: inline;
+        list-style-type: none;
+        color: rgba(255, 255, 255, .7);
+        padding-bottom: 2rem;
+
+        & .nav-link {
+            float: left;
+            border: 1px solid rgb(77, 83, 84);
+            text-decoration: none;
+            color: rgba(255, 255, 255, .7);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 0px 10px;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #47c9e5;
+                color: white;
+            }
+        }
+    }
+    li.nav-link.active {
+        background-color: #47c9e5;
+        color: white;
+        // font-weight: bolder;
+    }
+
+    p {
+        color: #ccc;
+    }
+
+    .portfolio {
+        margin-top: -130px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    // BEGIN MANSORY GALLERY
+    .mansory {
+        columns: 3;
+        column-gap: 16px;
+        justify-content: center;
+
+        @media (max-width: 1200px) {
+            columns: 3;
+        }
+
+        @media (max-width: 992px) {
+            columns: 2;
+        }
+        @media (max-width: 600px) {
+            columns: 1;
+        }
+    }
+
+    .mansory-enter {
+        transform: scale(0.5) translatey(-80px);
+        opacity: 0;
+    }
+
+    .mansory-leave-to {
+        transform: translatey(30px);
+        opacity: 0;
+    }
+
+    .mansory-leave-active {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .imgList {
+        transition: all .35s ease-in-out;
+        margin: 10px;
+        border-radius: 3px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .hover-image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        padding: 3px;
+        transition: .5s ease;
+        background: linear-gradient(45deg, rgba(71, 201, 229, 0.9) 0%, rgba(102, 252, 233, 0.9) 100%);
+    }
+
+    img {
+        width:100%;
+        border-radius: 5px;
+    }
+
+    .imgList img {
+        max-width: 100%;
+    }
+
+    .imgList:hover .hover-image {
+        opacity: 1;
+    }
+
+    .imgList:hover img,
+    .imgList:focus img {
+        transition: all .5s;
+        transform: scale(1.2);
+        filter: blur(0.5px)
+    }
+
+    .gallery-title {
+        transition: all .5s ease-in-out;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

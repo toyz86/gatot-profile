@@ -1,0 +1,16 @@
+[
+  {
+    "name": "detail",
+    "path": "/detail",
+    "component": "/Users/mac/Code/gatot-profile/pages/detail.vue",
+    "chunkName": "pages/detail",
+    "_name": "_2beeadec"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/mac/Code/gatot-profile/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e1f448ae"
+  }
+]
