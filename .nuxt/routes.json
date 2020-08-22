@@ -1,10 +1,10 @@
 [
   {
-    "name": "detail",
-    "path": "/detail",
-    "component": "/Users/mac/Code/gatot-profile/pages/detail.vue",
-    "chunkName": "pages/detail",
-    "_name": "_2beeadec"
+    "name": "projects-id",
+    "path": "/projects/:id?",
+    "component": "/Users/mac/Code/gatot-profile/pages/projects/_id.vue",
+    "chunkName": "pages/projects/_id",
+    "_name": "_36a9249e"
   },
   {
     "name": "index",

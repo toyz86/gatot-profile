@@ -1,12 +1,25 @@
 <template>
   <section class="footer">
-    <div class="d-flex align-items-center">
-      <img class="logo-footer" src="/img/t-black.png" alt="logo">
-      <div class="footer-right">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
+    <div class="row">
+      <div class="col-4">
+        <div class="d-flex align-items-center">
+          <img class="logo-footer" src="/img/t-black.png" alt="logo">
+          <div class="v-line ml-3"></div>
+          <h4 class="ml-3">Toyz<b>Design</b>.Inc</h4>
+        </div>
+      </div>
+      <div class="col-8">
+        <p>Our Clients :</p>
+        <div class="d-flex">
+          <p class="mr-5">Client 1</p>
+          <p class="mr-5">Client 2</p>
+          <p class="mr-5">Client 3</p>
+          <p class="mr-5">Client 4</p>
+          <p class="mr-5">Client 5</p>
+          <p class="mr-5">Client 6</p>
+          <p class="mr-5">Client 7</p>
+          <p class="mr-5">Client 8</p>          
+        </div>
       </div>
     </div>
   </section>
@@ -16,6 +29,7 @@
   .footer {
     padding: 100px 0px 100px 0px;
     background-color: #f5f5f5;
+    color: #8d8d8d;
   }
   .logo-footer {
     max-width: 100px; 
@@ -38,5 +52,9 @@
     line-height: 35px;
     margin-left: 3px;
     transition:all .25s;    
+  }
+  .v-line {
+    border-left: 1px solid grey;
+    height: 100px;
   }
 </style>
