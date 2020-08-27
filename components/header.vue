@@ -8,7 +8,9 @@
           <a href="#"><i class="fa fa-linkedin"></i></a>
           <a href="#"><i class="fa fa-github"></i></a>
         </div>
-        <img class="logo" src="/img/t-black.png" alt="logo">
+        <nuxt-link to="/">
+          <img class="logo" src="/img/t-black.png" alt="logo">
+        </nuxt-link>
         <div class="menu">
           <i class="fa fa-bars"></i>
         </div>

@@ -20,50 +20,60 @@
           </p>
         </div>
       </div>
-      <RelatedItems />
     </div>
   </section>
 </template>
 
 <script>
 import Header from '~/components/header.vue'
-import RelatedItems from '~/components/related-items.vue'
 export default {
   data() {
     return {
       images: [
-        {id: 1, title: "LOGO", name: "Swam Fox inc.", url: "/img/swam-fox.jpeg", category: 'LOGO'},
-        {id: 2, title: "LOGO", name: "Meraki inc.", url: "/img/meraki.png", category: 'LOGO'},
-        {id: 3, title: "LOGO", name: "Jackson inc.", url: "/img/jackson.jpg", category: 'LOGO'},
-        {id: 4, title: "POSTER", name: "Poster Mockup 3", url: "/img/poster3.jpeg", category: 'POSTER'},
-        {id: 5, title: "POSTER", name: "Swam Fox inc.", url: "/img/brochure.jpg", category: 'POSTER'},
-        {id: 6, title: "POSTER", name: "Poster Mockup 1", url: "/img/poster.jpg", category: 'POSTER'},
-        {id: 7, title: "POSTER", name: "Poster Mockup 2", url: "/img/poster2.jpg", category: 'POSTER'},
-        {id: 8, title: "BROCHURE", name: "Swam Fox inc.", url: "/img/brochure2.png", category: 'BROCHURE'},
-        {id: 9, title: "BROCHURE", name: "Swam Fox inc.", url: "/img/Flyer.jpg", category: 'BROCHURE'},
-        {id: 10, title: "ANNUAL REPORT", name: "Swam Fox inc.", url: "http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg", category: 'ANNUAL-REPORT'},
-        {id: 11, title: "ANNUAL REPORT", name: "Swam Fox inc.", url: "/img/annual.jpg", category: 'ANNUAL-REPORT'},
-        {id: 12, title: "ANNUAL REPORT", name: "Swam Fox inc.", url: "/img/annual2.jpg", category: 'ANNUAL-REPORT'},
-        {id: 13, title: "BUSINESS CARD", name: "Swam Fox inc.", url: "https://image.freepik.com/free-psd/luxury-logo-mockup-dark-business-card_103373-98.jpg", category: 'LOGO'},
-        {id: 14, title: "BUSINESS CARD", name: "Falken inc.", url: "/img/Kalender Falken rev.jpg", category: 'POSTER'},
-        {id: 15, title: "OTHER", name: "Swam Fox inc.", url:"https://image.freepik.com/free-psd/front-back-isolated-t-shirt-with-shadow-mockup_117023-1752.jpg", category: 'LOGO'},
-        {id: 16, title: "OTHER", name: "Swam Fox inc.", url: "https://image.freepik.com/free-psd/mobile-phone-mockup-with-editable-design-changeable-colors_196070-196.jpg", category: 'LOGO'},
-        {id: 17, title: "SIGNAGE", name: "Swam Fox inc.", url:"https://image.freepik.com/free-psd/front-back-isolated-t-shirt-with-shadow-mockup_117023-1752.jpg", category: 'LOGO'},        
+        {id: 1, title: "LOGO", url: "/img/swam-fox.jpeg", name: "Meraki inc.", tags: ['ALL', 'LOGO']},
+        {id: 2, title: "LOGO", url: "/img/meraki.png", name: "Meraki inc.", tags: ['ALL', 'LOGO']},
+        {id: 3, title: "LOGO", url: "/img/jackson.jpg", name: "Jackson inc.", tags: ['ALL', 'LOGO']},
+        {id: 4, title: "POSTER", url: "/img/poster3.jpeg", name: "Poster Mockup 3", tags: ['ALL', 'POSTER']},
+        {id: 5, title: "POSTER", url: "/img/brochure.jpg", name: "Swam Fox inc.", tags: ['ALL', 'POSTER']},
+        {id: 6, title: "POSTER", url: "/img/poster.jpg", name: "Poster Mockup 1", tags: ['ALL', 'POSTER']},
+        {id: 7, title: "POSTER", url: "/img/poster2.jpg", name: "Poster Mockup 2", tags: ['ALL', 'POSTER']},
+        {id: 8, title: "BROCHURE", url: "/img/brochure2.png", name: "Swam Fox inc.", tags: ['ALL', 'BROCHURE']},
+        {id: 9, title: "BROCHURE", url: "/img/Flyer.jpg", name: "Swam Fox inc.", tags: ['ALL', 'BROCHURE']},
+        {id: 10, title: "ANNUAL REPORT", url: "http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 11, title: "ANNUAL REPORT", url: "/img/annual.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 12, title: "ANNUAL REPORT", url: "/img/annual2.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 13, title: "BUSINESS CARD", url: "https://image.freepik.com/free-psd/luxury-logo-mockup-dark-business-card_103373-98.jpg", name: "Swam Fox inc.", tags: ['ALL', 'LOGO']},
+        {id: 14, title: "BUSINESS CARD", url: "/img/Kalender Falken rev.jpg", name: "Falken inc.", tags: ['ALL', 'POSTER']},
+        {id: 15, title: "OTHER", url:"https://image.freepik.com/free-psd/front-back-isolated-t-shirt-with-shadow-mockup_117023-1752.jpg", name: "Swam Fox inc.", tags: ['ALL', 'LOGO']},
+        {id: 16, title: "OTHER", url: "https://image.freepik.com/free-psd/mobile-phone-mockup-with-editable-design-changeable-colors_196070-196.jpg", name: "Swam Fox inc.", tags: ['ALL', 'LOGO']},
+        {id: 17, title: "SIGNAGE", url:"https://image.freepik.com/free-psd/front-back-isolated-t-shirt-with-shadow-mockup_117023-1752.jpg", name: "Swam Fox inc.", tags: ['ALL', 'LOGO']},
+        {id: 18, title: "LOGO", url: "/img/black-bear.jpg", name: "Black Bear Inc.", tags: ['ALL', 'LOGO']},
+        {id: 19, title: "POSTER", url: "/img/poster3.jpeg", name: "Poster Mockup 3", tags: ['ALL', 'POSTER']},
+        {id: 20, title: "POSTER", url: "/img/brochure.jpg", name: "Swam Fox inc.", tags: ['ALL', 'POSTER']},
+        {id: 21, title: "POSTER", url: "/img/poster.jpg", name: "Poster Mockup 1", tags: ['ALL', 'POSTER']},
+        {id: 22, title: "BROCHURE", url: "/img/brochure2.png", name: "Swam Fox inc.", tags: ['ALL', 'BROCHURE']},
+        {id: 23, title: "BROCHURE", url: "/img/Flyer.jpg", name: "Swam Fox inc.", tags: ['ALL', 'BROCHURE']},
+        {id: 24, title: "BROCHURE", url: "/img/brochure2.png", name: "Swam Fox inc.", tags: ['ALL', 'BROCHURE']},
+        {id: 25, title: "BROCHURE", url: "/img/Flyer.jpg", name: "Swam Fox inc.", tags: ['ALL', 'BROCHURE']},
+        {id: 26, title: "ANNUAL REPORT", url: "http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 27, title: "ANNUAL REPORT", url: "/img/annual.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 28, title: "ANNUAL REPORT", url: "/img/annual2.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 29, title: "ANNUAL REPORT", url: "http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 30, title: "ANNUAL REPORT", url: "/img/annual.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
+        {id: 31, title: "ANNUAL REPORT", url: "/img/annual2.jpg", name: "Swam Fox inc.", tags: ['ALL', 'ANNUAL-REPORT']},
       ],
     }
   },  
   components: {
     Header,
-    RelatedItems,
   },
   computed: {
     image () { 
       return this.images.find(v => v.id == this.$route.params.id)
-      // return this.$store.state.image == this.$route.params.id
     }
   },
-  mounted() {
-    console.log('ini adalah', this.images);
-  }
+  // mounted() {
+  //   console.log('ini adalah', this.images);
+  // }
 }
 </script>
