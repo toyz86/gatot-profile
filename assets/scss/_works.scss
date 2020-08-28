@@ -1,0 +1,134 @@
+.works {
+    padding: 30px 30px 30px 30px;
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .list-complete {
+        columns: 3;
+        column-gap: 16px;
+        justify-content: center;
+        width: 100%;
+        top: 0%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media (max-width: 1200px) {
+            columns: 3;
+        }
+
+        @media (max-width: 992px) {
+            columns: 2;
+        }
+
+        @media (max-width: 600px) {
+            columns: 1;
+        }
+    }
+
+    .list-complete-item {
+        transition: transform 1s;
+        flex: 1 1 25%;
+        margin: 10px;
+        border-radius: 3px;
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .list-complete-img {
+        object-fit: cover;
+        // height: 100%;
+        // width: 100%;
+    }
+
+    .list-complete-enter,
+    .list-complete-leave-to
+
+    /* .list-complete-leave-active for <2.1.8 */
+        {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    .list-complete-leave-active {
+        position: absolute;
+    }
+
+    .nav-bar {
+        display: inline;
+        list-style-type: none;
+        color: rgba(255, 255, 255, .7);
+        padding-bottom: 2rem;
+
+        & .nav-link {
+            float: left;
+            border: 1px solid #d3dcde;
+            text-decoration: none;
+            color: #6a787b;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 0px 10px;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #47c9e5;
+                color: white;
+            }
+        }
+    }
+    
+    li.nav-link.active {
+        background-color: #47c9e5;
+        color: white;
+    }
+
+    .list-complete-item:hover .works-hover {
+        opacity: 1;
+    }
+
+    .list-complete-item:hover img,
+    .list-complete-item:focus img {
+        transition: all .5s;
+        transform: scale(1.2);
+        filter: blur(0.5px)
+    }
+
+    .works-hover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        padding: 3px;
+        transition: .5s ease;
+        background: linear-gradient(45deg, rgba(71, 201, 229, 0.9) 0%, rgba(102, 252, 233, 0.9) 100%);
+    }
+
+    .works-title {
+        transition: all .5s ease-in-out;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 14px;
+    }
+}

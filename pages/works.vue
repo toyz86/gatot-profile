@@ -1,26 +1,28 @@
 <template>
-  <section class="detail">
+  <section>
     <Header />
-    <div class="container">
-      <h1 class="title">Portfolio</h1>
-      <p class="project-title">Home > Projects > <b>{{ image.title }}</b></p>
-      <div class="row justify-content-md-center">
-        <div class="col-8">
-          <img :src="image.url" alt="Card image cap" class="image-desc">
+    <section class="works">
+      <ul class="nav-bar d-flex justify-content-center">
+        <li class="nav-link" v-bind:class="{ active: currentTag === 'ALL' }" @click="filter('ALL')">All</li>
+        <li class="nav-link" v-bind:class="{ active: currentTag === 'LOGO' }" @click="filter('LOGO')">Logos</li>
+        <!-- <li class="nav-link" v-bind:class="{ active: currentTag === 'POSTER' }" @click="filter('POSTER')">Posters</li> -->
+        <li class="nav-link" v-bind:class="{ active: currentTag === 'GRAPHIC' }" @click="filter('GRAPHIC')">Graphic Design</li>
+        <li class="nav-link" v-bind:class="{ active: currentTag === 'ANNUAL-REPORT' }" @click="filter('ANNUAL-REPORT')">Annual Report</li>      
+      </ul>    
+      <transition-group name="list-complete" class="list-complete" tag="section">
+        <div v-for="item in filteredItems" :key="item.id" class="list-complete-item">
+          <nuxt-link :to="`/projects/${item.id}`">
+            <img class="list-complete-img" :src="item.url" alt="" />
+            <div class="works-hover">
+              <div class="works-title">
+                <h4>{{ item.name }}</h4>
+                <span class="project-title">{{ item.title }} Design</span>
+              </div>
+            </div>        
+          </nuxt-link>
         </div>
-        <div class="col-4">
-          <h2 class="project-name">{{ image.name }}</h2>
-          <hr />
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer vitae dui felis. Curabitur posuere nibh et orci consequat, nec molestie dui pulvinar. 
-            Cras auctor ligula quis ante tristique, vitae vestibulum magna aliquam. 
-            Mauris vel luctus dolor. Sed ac consequat turpis. 
-            Aenean dignissim velit ut varius congue. Nunc lacinia consequat lorem, 
-            ut suscipit lorem rutrum sit amet. Ut et elementum ligula.
-          </p>
-        </div>
-      </div>
-    </div>
+      </transition-group>
+    </section>
   </section>
 </template>
 
@@ -56,19 +58,25 @@ export default {
         {id: 24, title: "BUSINESS CARD", url: "/img/Draft kalender 2021 dunlop4.jpg", name: "Swam Fox inc.", tags: ['ALL', 'GRAPHIC']},
         {id: 25, title: "BUSINESS CARD", url: "/img/Kalender Falken rev.jpg", name: "Falken inc.", tags: ['ALL', 'GRAPHIC']},
         {id: 26, title: "ANNUAL REPORT", url: "/img/annual8.jpg", name: "Waskita Realty", tags: ['ALL', 'ANNUAL-REPORT']},
-      ],
+      ],      
+      currentTag: 'ALL'
     }
-  },  
+  },
   components: {
     Header,
-  },
+  },  
   computed: {
-    image () { 
-      return this.images.find(v => v.id == this.$route.params.id)
+    filteredItems () {
+      var filter = this.currentTag;
+      return this.images.filter(function(item) {
+          return item.tags.indexOf(filter) !== -1;
+      });
     }
   },
-  // mounted() {
-  //   console.log('ini adalah', this.images);
-  // }
+  methods: {
+    filter (tag) {
+      this.currentTag = tag;
+    }
+  }  
 }
 </script>
