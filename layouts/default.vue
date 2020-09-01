@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div id="frame-top"></div>
+    <div id="frame-right"></div>
+    <div id="frame-bottom"></div>
+    <div id="frame-left"></div>    
     <Nuxt />
     <Footer />
   </div>
@@ -68,4 +72,42 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+    #frame-top,
+    #frame-bottom,
+    #frame-left,
+    #frame-right {
+        background: #fff;
+        position: fixed;
+        z-index: 99;
+    }
+
+    #frame-left,
+    #frame-right {
+        top: 0;
+        bottom: 0;
+        width: 18px;
+    }
+
+    #frame-left {
+        left: 0;
+    }
+
+    #frame-right {
+        right: 0;
+    }
+
+    #frame-top,
+    #frame-bottom {
+        left: 0;
+        right: 0;
+        height: 18px;
+    }
+
+    #frame-top {
+        top: 0;
+    }
+
+    #frame-bottom {
+        bottom: 0;
+    }
 </style>

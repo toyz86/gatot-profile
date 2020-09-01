@@ -57,13 +57,15 @@ export default {
       currentTag: 'ALL'
     }
   },
+
   computed: {
     filteredItems () {
       var filter = this.currentTag;
       return this.images.filter(function(item) {
           return item.tags.indexOf(filter) !== -1;
       });
-    }
+    },
+
   },
   methods: {
     filter (tag) {

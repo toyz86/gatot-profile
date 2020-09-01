@@ -1,10 +1,12 @@
 .works {
-    padding: 30px 30px 30px 30px;
+    // padding: 30px 30px 30px 30px;
+    margin: 20px 0 20px 0;
     img {
         width: 100%;
         border-radius: 5px;
     }
     .list-complete {
+        z-index: -1;
         columns: 3;
         column-gap: 16px;
         justify-content: center;
