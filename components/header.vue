@@ -3,10 +3,10 @@
     <div class="main-page">
       <div class="d-flex justify-content-between align-items-center">
         <div class="sosmed">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
         </div>
         
         <nuxt-link to="/">
@@ -158,4 +158,10 @@
   .menu__btn>span::after {
     background-color: #6a787b;
   }
+
+  @media (max-width: 992px) {
+    .sosmed {
+        display: none;
+  }
+}
 </style>

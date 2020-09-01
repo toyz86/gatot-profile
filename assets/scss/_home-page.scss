@@ -76,6 +76,33 @@
         padding: 0px 90px 0px 90px;
     }
 
+    @media (max-width: 992px) {
+        .portfolio {
+            padding: 0px 70px 0px 50px;
+        }
+        .profile-text {
+            padding: 0;
+        }
+        .socmed-link {
+            display: none;
+        }
+        .logo {
+            margin-left: 0px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .portfolio {
+            padding: 0;
+        }
+        .profile-text {
+            padding: 0;
+        }
+        .main-page {
+            padding: 100px 80px 240px 70px;
+        }
+    }
+
     img {
         width:100%;
         border-radius: 5px;

@@ -3,10 +3,10 @@
     <div class="main-page">
       <div class="d-flex justify-content-between">
         <div class="socmed-link">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
         </div>    
         <img class="logo" src="/img/t.png" alt="logo">
 
@@ -17,7 +17,7 @@
           </label>
 
           <ul class="menu__box">
-            <li><a class="menu__item" href="/">About</a></li>
+            <li><a class="menu__item" href="/">Home</a></li>
             <li><a class="menu__item" href="/works">Works</a></li>
             <li><a class="menu__item" href="#">Contact</a></li>
           </ul>    
