@@ -1,5 +1,12 @@
 [
   {
+    "name": "works",
+    "path": "/works",
+    "component": "/Users/mac/Code/gatot-profile/pages/works.vue",
+    "chunkName": "pages/works",
+    "_name": "_0132f659"
+  },
+  {
     "name": "projects-id",
     "path": "/projects/:id?",
     "component": "/Users/mac/Code/gatot-profile/pages/projects/_id.vue",
