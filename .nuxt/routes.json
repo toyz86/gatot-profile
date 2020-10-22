@@ -1,23 +1,26 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/mac/Code/gatot-profile/pages/about.vue",
+    "chunkName": "pages/about"
+  },
+  {
     "name": "works",
     "path": "/works",
     "component": "/Users/mac/Code/gatot-profile/pages/works.vue",
-    "chunkName": "pages/works",
-    "_name": "_0132f659"
+    "chunkName": "pages/works"
   },
   {
     "name": "projects-id",
     "path": "/projects/:id?",
     "component": "/Users/mac/Code/gatot-profile/pages/projects/_id.vue",
-    "chunkName": "pages/projects/_id",
-    "_name": "_36a9249e"
+    "chunkName": "pages/projects/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/mac/Code/gatot-profile/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_e1f448ae"
+    "chunkName": "pages/index"
   }
 ]

@@ -16,5 +16,17 @@
   },
   "LazyHeader": {
     "description": "Auto imported from components/header.vue"
+  },
+  "Loader": {
+    "description": "Auto imported from components/loader.vue"
+  },
+  "LazyLoader": {
+    "description": "Auto imported from components/loader.vue"
+  },
+  "RelatedItems": {
+    "description": "Auto imported from components/related-items.vue"
+  },
+  "LazyRelatedItems": {
+    "description": "Auto imported from components/related-items.vue"
   }
 }

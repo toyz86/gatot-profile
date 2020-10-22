@@ -1,32 +1,17 @@
 <template>
   <section class="home-page">
     <div class="main-page">
+    <Header />
       <div class="d-flex justify-content-between">
-        <div class="socmed-link">
-          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
-        </div>    
-        <img class="logo" src="/img/t.png" alt="logo">
 
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
-
-          <ul class="menu__box">
-            <li><a class="menu__item" href="/">Home</a></li>
-            <li><a class="menu__item" href="/works">Works</a></li>
-            <li><a class="menu__item" href="#">Contact</a></li>
-          </ul>    
-        </div>  
+      </div>
+      <div class="d-flex justify-content-center">
+      <vue-typed-js :strings="['Hi, My name is <b>Gatot Prastyo</b>, I’m a Graphic Designer and Frontend Developer enthusiast living in Bogor, Indonesia.']">
+        <h1><span class="typing"></span></h1>
+      </vue-typed-js>
       </div>
 
-      <h1 class="title">Toyz<strong>design</strong></h1>
-      <p class="profile-text mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim consectetur feugiat. Fusce quis ex fringilla, facilisis velit et, euismod mauris. Vivamus quis consectetur nisi. Ut a est enim. Suspendisse imperdiet nisl id metus posuere mattis.</p>
-    </div>
+    </div>     
     <section class="portfolio">
       <Gallery />
     </section>  
@@ -34,7 +19,9 @@
 </template>
 
 <script>
-import Gallery from '~/components/gallery.vue'
+import Gallery from '~/components/gallery.vue';
+import Header from '~/components/header.vue';
+
 export default {
   data() {
     return {
@@ -43,6 +30,14 @@ export default {
   },
   components: {
     Gallery,
+    Header,
   },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 300)
+    })
+  }  
 }
 </script>

@@ -1,4 +1,7 @@
 .detail {
+    * {
+        font-family: 'Poppins';
+    }
     margin: 20px 0 20px 0;
     .logo-footer {
         max-width: 100px;
@@ -18,9 +21,22 @@
     }
     .project-description {
         color: #8d8d8d;
+        line-height: 1;
     }
     .image-desc {
         width: 100%;
         border-radius: 5px;
+    }
+    img.image-desc-little {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 992px) {
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 1000px;
+        }
     }
 }

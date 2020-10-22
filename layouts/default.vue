@@ -1,9 +1,11 @@
 <template>
   <div>
-    <div id="frame-top"></div>
-    <div id="frame-right"></div>
-    <div id="frame-bottom"></div>
-    <div id="frame-left"></div>    
+    <div v-if="this.$route.path == '/'">
+      <div id="frame-top"></div>
+      <div id="frame-right"></div>
+      <div id="frame-bottom"></div>
+      <div id="frame-left"></div>
+    </div>
     <Nuxt />
     <Footer />
   </div>
@@ -109,5 +111,14 @@ html {
 
     #frame-bottom {
         bottom: 0;
+    }
+
+    @media (max-width: 320px) {
+      #frame-top,
+      #frame-right,
+      #frame-bottom,
+      #frame-left {
+        display: none;
+      }
     }
 </style>

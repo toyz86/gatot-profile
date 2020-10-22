@@ -1,17 +1,29 @@
 .home-page {
+    * {
+        font-family: 'Poppins';
+    }
     h1 {
         color: cornsilk;
+    }
+
+    span.typing {
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.5;
     }
 
     .main-page {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 100px 100px 240px 100px;
+        padding: 50px 100px 240px 100px;
         background-image: url("/img/home-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0 auto;
+        min-height: 100vh;
+        @media (max-width: 1024){
+            min-height: 0vh;
+        }
     }
 
     .title {
@@ -38,30 +50,6 @@
         padding: 0 200px 0 200px;
     }
 
-    .nav-bar {
-        display: inline;
-        list-style-type: none;
-        color: rgba(255, 255, 255, .7);
-        padding-bottom: 2rem;
-
-        & .nav-link {
-            float: left;
-            border: 1px solid rgb(77, 83, 84);
-            text-decoration: none;
-            color: rgba(255, 255, 255, .7);
-            padding: 5px 15px;
-            border-radius: 20px;
-            margin: 0px 10px;
-            text-align: center;
-            transition: 0.5s;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #47c9e5;
-                color: white;
-            }
-        }
-    }
     li.nav-link.active {
         background-color: #47c9e5;
         color: white;
@@ -74,11 +62,14 @@
     .portfolio {
         margin-top: -130px;
         padding: 0px 90px 0px 90px;
+        transform: translate(-10px, 10px);
+        margin-bottom: 20px;
     }
 
     @media (max-width: 992px) {
         .portfolio {
             padding: 0px 70px 0px 50px;
+            transform: translate(0px, -5px);
         }
         .profile-text {
             padding: 0;
@@ -94,12 +85,26 @@
     @media (max-width: 600px) {
         .portfolio {
             padding: 0;
+            transform: translate(-15px, 10px);
         }
         .profile-text {
             padding: 0;
         }
         .main-page {
-            padding: 100px 80px 240px 70px;
+            padding: 100px 80px 100px 70px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .portfolio {
+            transform: translate(-10px, 25px);
+        }
+        .main-page {
+            padding: 70px 50px 180px 50px;
+        }
+        .gallery .nav-bar .nav-link {
+            font-size: 13px;
+            padding: 5px 10px;
         }
     }
 
@@ -149,9 +154,6 @@
         visibility: visible;
         right: 0;
     }
-    #menu__toggle:checked~.home-page {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
 
     .menu__btn {
         display: flex;
@@ -188,7 +190,7 @@
 
     .menu__box {
         display: block;
-        position: absolute;
+        position: fixed;
         visibility: hidden;
         top: 0;
         right: -100%;

@@ -1,0 +1,18 @@
+.about {
+    font-family: 'Poppins';
+    margin: 20px 0 20px 0;
+    color: #474f52;
+    line-height: 2;
+
+    .pic-profile {
+        width: 100%;
+        @media (max-width: 992px) {
+            width: 70%;
+            transform: translateX(40px);
+        }
+    }
+
+    .hl-about {
+        line-height: 1.5;
+    }
+}

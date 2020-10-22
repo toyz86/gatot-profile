@@ -9,12 +9,15 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@morioh/v-lightbox": "^1.0.3",
     "masonry-layout": "^4.2.2",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.0",
     "sass-loader": "^10.0.0",
     "swiper": "^6.1.2",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-pure-lightbox": "^3.1.2",
+    "vue-typed-js": "^0.1.2",
     "vueisotope": "^3.1.2",
     "vuex": "^3.5.1"
   },
