@@ -34,7 +34,7 @@
         </div>
         <img :src="image.url" alt="Card image cap" class="image-desc mb-3">  
         <img :src="image.img1" alt="Card image cap" class="image-desc-little">
-        <img :src="image.img2" alt="Card image cap" class="image-desc-little">              
+        <img :src="image.img2" alt="Card image cap" class="image-desc-little">  
       </div>
       <!-- <RelatedItems /> -->
     </div>
@@ -47,6 +47,11 @@ import RelatedItems from '~/components/related-items.vue';
 import Header from '~/components/header.vue';
 
 export default {
+  data() {
+    return {
+      // images: []
+    }
+  },
   components: {
     Header,
     RelatedItems,
