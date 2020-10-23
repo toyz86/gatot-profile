@@ -2,12 +2,26 @@
   <section class="works">
     <Header />
     <div class="container">
-      <ul class="nav-bar d-flex justify-content-center">
-        <li class="nav-link" v-bind:class="{ active: currentTag === 'ALL' }" @click="filter('ALL')">All</li>
-        <li class="nav-link" v-bind:class="{ active: currentTag === 'LOGO' }" @click="filter('LOGO')">Logos</li>
-        <li class="nav-link" v-bind:class="{ active: currentTag === 'GRAPHIC' }" @click="filter('GRAPHIC')">Graphic Design</li>
-        <li class="nav-link" v-bind:class="{ active: currentTag === 'ANNUAL-REPORT' }" @click="filter('ANNUAL-REPORT')">Annual Report</li>      
-      </ul>    
+      <!-- show on desktop only -->
+      <div class="d-lg-block d-none">
+        <ul class="nav-bar d-flex justify-content-center">
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'ALL' }" @click="filter('ALL')">All</li>
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'LOGO' }" @click="filter('LOGO')">Logos</li>
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'GRAPHIC' }" @click="filter('GRAPHIC')">Graphic Design</li>
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'ANNUAL-REPORT' }" @click="filter('ANNUAL-REPORT')">Annual Report</li>      
+        </ul>   
+      </div>
+      <!-- show on mobile only -->
+      <div class="d-lg-none d-block mb-0">
+        <ul class="nav-bar d-flex justify-content-center">
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'ALL' }" @click="filter('ALL')">All</li>
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'LOGO' }" @click="filter('LOGO')">Logos</li>
+        </ul>
+        <ul class="nav-bar d-flex justify-content-center">
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'GRAPHIC' }" @click="filter('GRAPHIC')">Graphic Design</li>
+          <li class="nav-link" v-bind:class="{ active: currentTag === 'ANNUAL-REPORT' }" @click="filter('ANNUAL-REPORT')">Annual Report</li>      
+        </ul>   
+      </div>
       <transition-group name="list-complete" class="list-complete mb-10" tag="section">
         <div v-for="item in filteredItems" :key="item.id" class="list-complete-item">
           <nuxt-link :to="`/projects/${item.id}`">

@@ -28,6 +28,7 @@
 
         @media (max-width: 600px) {
             columns: 1;
+            transform: translateX(-9px);
         }
     }
 
@@ -135,5 +136,16 @@
 
     .project-title {
         font-size: 14px;
+    }
+
+    @media (max-width: 992px) {
+        .nav-bar {
+            padding-bottom: 0;
+        }
+    }
+    @media (max-width: 600px) {
+        .nav-bar {
+            margin-left: -35px;
+        }
     }
 }
