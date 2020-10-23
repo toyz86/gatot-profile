@@ -25,9 +25,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css' },
-      // { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/@morioh/v-lightbox/dist/lightbox.css' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Poppins'}
     ]
   },
@@ -38,37 +35,12 @@ export default {
     { src: '~/assets/scss/main.scss', lang: 'scss'}
   ],
 
-  // loadingIndicator: {
-  //   name: 'chasing-dots',
-  //   color: 'purple',
-  //   background: 'green',
-  // },
-
-  // loading: {
-  //   color: 'DodgerBlue',
-  //   height: '10px',
-  //   continuous: true,
-  //   duration: 3000,
-  // },  
-
   loading: '~/components/loader.vue',
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { 
-      src: '~plugins/swiper.js', 
-      ssr: false 
-    },
-    { 
-      src: '~plugins/VuePureLightbox.js', 
-      ssr: false 
-    },
-    { 
-      src: '~plugins/lightbox.js', 
-      ssr: false 
-    },
     { 
       src: '~plugins/vueTyped.js', 
       ssr: false 
