@@ -42,12 +42,20 @@
 <script>
 import { mapState } from 'vuex'
 import Header from '~/components/header.vue'
+
 export default {
   data() {
     return {
-      currentTag: 'ALL'
+      currentTag: 'ALL',
     }
   },
+  asyncData () {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
+  },  
   components: {
     Header,
   },  
@@ -60,19 +68,12 @@ export default {
       return this.images.filter(function(item) {
           return item.tags.indexOf(filter) !== -1;
       });
-    }
+    },
   },
   methods: {
     filter (tag) {
       this.currentTag = tag;
     }
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
-  }  
 }
 </script>

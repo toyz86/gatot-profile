@@ -47,11 +47,13 @@ import RelatedItems from '~/components/related-items.vue';
 import Header from '~/components/header.vue';
 
 export default {
-  data() {
-    return {
-      // images: []
-    }
-  },
+  asyncData () {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
+  },  
   components: {
     Header,
     RelatedItems,
@@ -64,16 +66,5 @@ export default {
       return this.images.find(v => v.id == this.$route.params.id)
     },
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
-  }
-
-  // mounted() {
-  //   console.log('ini adalah', this.images);
-  // }
 }
 </script>

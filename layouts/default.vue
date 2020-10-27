@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="this.$route.path == '/'">
+    <div class="d-lg-block d-none" v-if="this.$route.path == '/'">
       <div id="frame-top"></div>
       <div id="frame-right"></div>
       <div id="frame-bottom"></div>

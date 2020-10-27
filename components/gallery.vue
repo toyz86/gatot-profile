@@ -1,5 +1,6 @@
 <template>
   <section class="gallery">
+    <Loading v-if="onloading" />
     <!-- show on desktop only -->
     <div class="d-lg-block d-none">
       <ul class="nav-bar d-flex justify-content-center">
@@ -37,12 +38,16 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
+import Loading from '~/components/loading.vue'
 export default {
   data() {
     return {      
       currentTag: 'ALL'
     }
+  },
+  components: {
+    Loading
   },
 
   computed: {
@@ -55,6 +60,9 @@ export default {
           return item.tags.indexOf(filter) !== -1;
       });
     },
+    onloading() {
+      return (this.images.length <= 0)
+    }    
 
   },
   methods: {

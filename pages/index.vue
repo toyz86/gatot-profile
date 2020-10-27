@@ -32,12 +32,12 @@ export default {
     Gallery,
     Header,
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-
-      setTimeout(() => this.$nuxt.$loading.finish(), 300)
+  asyncData () {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
     })
-  }  
+  },
 }
 </script>
