@@ -13,6 +13,7 @@
 
 <script>
 import Footer from '~/components/footer.vue'
+
 export default {
   components: {
     Footer
@@ -80,7 +81,7 @@ html {
     #frame-right {
         background: #fff;
         position: fixed;
-        z-index: 99;
+        z-index: 999;
     }
 
     #frame-left,

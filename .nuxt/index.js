@@ -15,6 +15,7 @@ import { createStore } from './store.js'
 
 import nuxt_plugin_plugin_26e48582 from 'nuxt_plugin_plugin_26e48582' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_vueTyped_364fb4bc from 'nuxt_plugin_vueTyped_364fb4bc' // Source: ../plugins/vueTyped.js (mode: 'client')
+import nuxt_plugin_bootstrap_0a49ca20 from 'nuxt_plugin_bootstrap_0a49ca20' // Source: ../plugins/bootstrap.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -74,7 +75,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"gatot-profile","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ftwitter-bootstrap\u002F5.0.0-alpha1\u002Fcss\u002Fbootstrap.min.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F4.7.0\u002Fcss\u002Ffont-awesome.min.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins"}],"style":[],"script":[]},
+    head: {"title":"gatot-profile","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fimg\u002Ficon-profile.png"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ftwitter-bootstrap\u002F5.0.0-alpha1\u002Fcss\u002Fbootstrap.min.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F4.7.0\u002Fcss\u002Ffont-awesome.min.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins"}],"style":[],"script":[]},
 
     store,
     router,
@@ -209,6 +210,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_vueTyped_364fb4bc === 'function') {
     await nuxt_plugin_vueTyped_364fb4bc(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_bootstrap_0a49ca20 === 'function') {
+    await nuxt_plugin_bootstrap_0a49ca20(app.context, inject)
   }
 
   // Lock enablePreview in context
