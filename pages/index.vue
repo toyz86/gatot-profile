@@ -1,18 +1,20 @@
 <template>
   <section class="home-page">
-    <div class="main-page">
-      <Header />
-      
-      <div class="d-flex justify-content-center">
-        <vue-typed-js :strings="['Hi, My name is <b>Gatot Prastyo</b>, I’m a Graphic Designer and Frontend Developer enthusiast living in Bogor, Indonesia.']">
-          <h1><span class="typing"></span></h1>
-        </vue-typed-js>
-      </div>
+    <div class="container-fluid">
+      <div class="main-page">
+        <Header />
+        
+        <div class="d-flex justify-content-center">
+          <vue-typed-js :strings="['Hi, My name is <b>Gatot Prastyo</b>, I’m a Graphic Designer and Frontend Developer enthusiast living in Bogor, Indonesia.']">
+            <h1><span class="typing"></span></h1>
+          </vue-typed-js>
+        </div>
 
-    </div>     
-    <section class="portfolio">
-      <Gallery />
-    </section>  
+      </div>     
+      <section class="portfolio">
+        <Gallery />
+      </section>  
+    </div>
   </section>
 </template>
 

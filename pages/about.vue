@@ -3,10 +3,10 @@
     <Header />
     <div class="container">
       <!-- desktop only -->
-      <div class="d-none d-lg-block">
+      <div class="about-section d-none d-lg-block">
         <div class="row mt-5">
           <div class="col-6">
-            <img class="pic-profile" src="/img/gatot.png" alt="gatotz">
+            <img class="pic-profile" src="/img/gatot.jpg" alt="gatotz">
           </div>
           <div class="col-6">
             <h4 class="hl-about mt-5">Hi, My name is <b>Gatot Prastyo</b>, I’m a Graphic Designer and Frontend Developer enthusiast living in Bogor, Indonesia.</h4>

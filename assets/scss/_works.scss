@@ -28,7 +28,7 @@
 
         @media (max-width: 600px) {
             columns: 1;
-            transform: translateX(-9px);
+            transform: translateX(-10px);
         }
     }
 
@@ -147,5 +147,10 @@
         .nav-bar {
             margin-left: -35px;
         }
+    }
+    @media (max-width: 320px) {
+        .nav-bar {
+            font-size: 12px;
+        }    
     }
 }

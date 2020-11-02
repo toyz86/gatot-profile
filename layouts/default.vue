@@ -114,6 +114,13 @@ html {
         bottom: 0;
     }
 
+  /* .container, .container-fluid, 
+  .container-lg, .container-md, 
+  .container-sm, .container-xl, 
+  .container-xxl {
+    padding: 0px
+  } */
+
     @media (max-width: 320px) {
       #frame-top,
       #frame-right,

@@ -2,6 +2,7 @@
     * {
         font-family: 'Poppins';
     }
+
     h1 {
         color: cornsilk;
     }
@@ -80,18 +81,21 @@
         .logo {
             margin-left: 0px;
         }
+        .container-fluid {
+            padding: 0px;
+        }
     }
 
     @media (max-width: 600px) {
         .portfolio {
             padding: 0;
-            transform: translate(-15px, 10px);
+            transform: translate(-10px, 10px);
         }
         .profile-text {
             padding: 0;
         }
         .main-page {
-            padding: 100px 80px 100px 70px;
+            padding: 100px 60px 100px 60px;
         }
     }
 
@@ -100,11 +104,28 @@
             transform: translate(-10px, 25px);
         }
         .main-page {
-            padding: 70px 50px 180px 50px;
+            padding: 100px 50px 180px 50px;
         }
         .gallery .nav-bar .nav-link {
             font-size: 13px;
             padding: 5px 10px;
+        }
+        .typing {
+            font-size: 23px;
+        }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .main-page {
+            padding: 100px 100px 200px 100px;
+            min-height: 50vh;
+        }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .main-page {
+            padding: 100px 100px 200px 100px;
+            min-height: 50vh;
         }
     }
 

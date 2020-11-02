@@ -125,6 +125,7 @@
     @media (max-width: 992px) {
         .nav-bar {
             padding-bottom: 0;
+            transform: translateX(-5px);
         }
     }
 }

@@ -1,10 +1,4 @@
 {
-  "Burger": {
-    "description": "Auto imported from components/burger.vue"
-  },
-  "LazyBurger": {
-    "description": "Auto imported from components/burger.vue"
-  },
   "Footer": {
     "description": "Auto imported from components/footer.vue"
   },
