@@ -1,26 +1,59 @@
 <template>
-  <section class="home-page">
-    <div class="container-fluid">
+  <section class="home-page" id="home-page">
+    <!-- <div class="container-fluid"> -->
+      
       <div class="main-page">
-        <Header />
+        <!-- <Header /> -->
+      
+        <div class="d-none d-lg-block">
+          <b-row>
+            <b-col cols="8">
+              <div class="home-title">
+                <h1 class="title__text js-letter" style="transform: translateX(0%) translateZ(0px);">Gatot<br><strong>Prastyo</strong></h1>
+                <div class="stripe" style="transform: translateX(0%) translateZ(0px);">
+                  <span></span>
+                  <span class="js-letter" style="transform: translateX(0%) translateZ(0px);"></span>
+                </div>
+                <p class="title__lead js-letter" style="transform: translateX(0%) translateZ(0px);">graphic /<br>web designer.</p>
+              </div>
+            </b-col>
+
+            <b-col cols="4">
+              <div class="title-portfolio">portfolio</div>
+            </b-col>
+
+          </b-row>
+        </div>  
+
+        <div class="d-block d-lg-none">
+          <!-- <h1 class="title-portfolio">portfolio</h1> -->
+          <div class="home-title">
+            <h1 class="title__text js-letter" style="transform: translateX(0%) translateZ(0px);">Gatot<br><strong>Prastyo</strong></h1>
+            <div class="stripe" style="transform: translateX(0%) translateZ(0px);">
+              <span></span>
+              <span class="js-letter" style="transform: translateX(0%) translateZ(0px);"></span>
+            </div>
+            <p class="title__lead js-letter" style="transform: translateX(0%) translateZ(0px);">graphic /<br>web designer.</p>
+          </div>
+        </div>              
         
-        <div class="d-flex justify-content-center">
+        <!-- <div class="d-flex justify-content-center">
           <vue-typed-js :strings="['Hi, My name is <b>Gatot Prastyo</b>, I’m a Graphic Designer and Frontend Developer enthusiast living in Bogor, Indonesia.']">
             <h1><span class="typing"></span></h1>
           </vue-typed-js>
-        </div>
+        </div> -->
 
       </div>     
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <Gallery />
       </section>  
-    </div>
+    <!-- </div> -->
   </section>
 </template>
 
 <script>
 import Gallery from '~/components/gallery.vue';
-import Header from '~/components/header.vue';
+// import Header from '~/components/header.vue';
 
 export default {
   data() {
@@ -29,7 +62,7 @@ export default {
   },
   components: {
     Gallery,
-    Header
+    // Header
   },
   asyncData () {
     return new Promise((resolve) => {

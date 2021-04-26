@@ -202,6 +202,42 @@ const createstore = () => {
                     name: "Waskita Realty", 
                     tags: ['ALL', 'ANNUAL-REPORT']
                 },
+                {
+                    id: 23, 
+                    title: "LOGO", 
+                    url: "/img/new/mount.jpg", 
+                    img1: "/img/new/mount.jpg", 
+                    img2: "/img/new/mount.jpg", 
+                    name: "Mount Wicks Candle Co.", 
+                    tags: ['ALL', 'LOGO']
+                },   
+                {
+                    id: 24, 
+                    title: "GRAPHIC", 
+                    url: "/img/new/dunlop-leaflet.jpg", 
+                    img1: "/img/new/dunlop-leaflet.jpg", 
+                    img2: "/img/new/dunlop-leaflet.jpg", 
+                    name: "Dunlop", 
+                    tags: ['ALL', 'GRAPHIC']
+                },  
+                {
+                    id: 25, 
+                    title: "GRAPHIC", 
+                    url: "/img/new/Showcase-Devices-Presentation.jpg", 
+                    img1: "/img/new/Showcase-Devices-Presentation.jpg", 
+                    img2: "/img/new/Showcase-Devices-Presentation.jpg", 
+                    name: "Antv Klik", 
+                    tags: ['ALL', 'GRAPHIC']
+                },      
+                {
+                    id: 26, 
+                    title: "GRAPHIC", 
+                    url: "/img/new/web2.jpg", 
+                    img1: "/img/new/web2.jpg", 
+                    img2: "/img/new/web2.jpg", 
+                    name: "Bay Shore Systems Inc.", 
+                    tags: ['ALL', 'GRAPHIC']
+                },                                                        
             ], 
         },
         mutations: {

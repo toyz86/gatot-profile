@@ -1,6 +1,6 @@
 <template>
-  <section class="detail">
-    <Header />
+  <section class="detail" id="detail">
+    <!-- <Header /> -->
     <div class="container">
       <h1 class="title">Portfolio</h1>
       <p class="project-title">Home > Projects > <b>{{ image.title }}</b></p>
@@ -44,7 +44,7 @@
 <script>
 import { mapState } from 'vuex';
 import RelatedItems from '~/components/related-items.vue';
-import Header from '~/components/header.vue';
+// import Header from '~/components/header.vue';
 
 export default {
   asyncData () {
@@ -55,7 +55,7 @@ export default {
     })
   },  
   components: {
-    Header,
+    // Header,
     RelatedItems,
   },
   computed: {

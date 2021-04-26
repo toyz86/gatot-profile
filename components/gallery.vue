@@ -28,7 +28,7 @@
           <div class="works-hover">
             <div class="works-title">
               <h4>{{ item.name }}</h4>
-              <span class="project-title">{{ item.title }} Design</span>
+              <!-- <span class="project-title">{{ item.title }} Design</span> -->
             </div>
           </div>        
         </nuxt-link>

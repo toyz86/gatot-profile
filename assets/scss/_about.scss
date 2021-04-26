@@ -1,8 +1,9 @@
 .about {
     font-family: 'Poppins';
-    margin: 20px 0 20px 0;
-    color: #474f52;
+    // margin: 20px 0 20px 0;
+    color: #fff;
     line-height: 2;
+    background-color: #000;
 
     .pic-profile {
         width: 100%;
@@ -19,7 +20,7 @@
     .about-section {
         @media (min-width: 992px){
             display: block!important;
-            padding: 0 50px;
+            padding: 50px;
         }
     }
 }

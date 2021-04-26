@@ -22,10 +22,26 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/img/icon-profile.png'},
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Poppins'},
+      { 
+        rel: 'icon', 
+        type: 'image/x-icon', 
+        href: '/img/icon-profile.png'
+      },
+      { 
+        rel: 'stylesheet', 
+        type: 'text/css', 
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css' 
+      },
+      { 
+        rel: 'stylesheet', 
+        type: 'text/css', 
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' 
+      },
+      { 
+        rel: 'stylesheet', 
+        type: 'text/css', 
+        href: 'https://fonts.googleapis.com/css?family=Poppins'
+      },
     ]
   },
   /*

@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div class="d-lg-block d-none" v-if="this.$route.path == '/'">
+    <Header />
+    <!-- <div class="d-lg-block d-none" v-if="this.$route.path == '/'">
       <div id="frame-top"></div>
       <div id="frame-right"></div>
       <div id="frame-bottom"></div>
       <div id="frame-left"></div>
-    </div>
+    </div> -->
     <Nuxt />
     <Footer />
   </div>
@@ -13,15 +14,18 @@
 
 <script>
 import Footer from '~/components/footer.vue'
+import Header from '~/components/header.vue'
 
 export default {
   components: {
-    Footer
+    Footer,
+    Header
   }
 }
 </script>
 <style>
 html {
+  background: #000;
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -113,6 +117,11 @@ html {
     #frame-bottom {
         bottom: 0;
     }
+
+    .blurin {
+      filter: blur(10px);
+      transition: 0.5s ease-in-out;
+    }    
 
   /* .container, .container-fluid, 
   .container-lg, .container-md, 
