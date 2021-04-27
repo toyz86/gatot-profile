@@ -218,7 +218,7 @@ const createstore = () => {
                     img1: "/img/new/dunlop-leaflet.jpg", 
                     img2: "/img/new/dunlop-leaflet.jpg", 
                     name: "Dunlop", 
-                    tags: ['ALL', 'WEB']
+                    tags: ['ALL', 'GRAPHIC']
                 },  
                 {
                     id: 25, 
