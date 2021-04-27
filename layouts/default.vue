@@ -8,17 +8,17 @@
       <div id="frame-left"></div>
     </div> -->
     <Nuxt />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import Footer from '~/components/footer.vue'
+// import Footer from '~/components/footer.vue'
 import Header from '~/components/header.vue'
 
 export default {
   components: {
-    Footer,
+    // Footer,
     Header
   }
 }

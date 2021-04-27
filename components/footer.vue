@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="d-flex justify-content-center">
       <div class="project-name">
         <h2>Contact <b>Me</b></h2>

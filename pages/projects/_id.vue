@@ -38,13 +38,14 @@
       </div>
       <!-- <RelatedItems /> -->
     </div>
+    <Footer />
   </section>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 import RelatedItems from '~/components/related-items.vue';
-// import Header from '~/components/header.vue';
+import Footer from '~/components/footer.vue';
 
 export default {
   asyncData () {
@@ -55,7 +56,7 @@ export default {
     })
   },  
   components: {
-    // Header,
+    Footer,
     RelatedItems,
   },
   computed: {

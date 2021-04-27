@@ -83,7 +83,7 @@ const createstore = () => {
                     img1: "/img/tppi1.jpg", 
                     img2: "/img/tppi2.jpg", 
                     name: "TPPI", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 10, 
@@ -92,7 +92,7 @@ const createstore = () => {
                     img1: "/img/kresna1.jpg", 
                     img2: "/img/kresna2.jpg", 
                     name: "Kresna Insurance", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 11, 
@@ -101,7 +101,7 @@ const createstore = () => {
                     img1: "/img/enseval1.jpg", 
                     img2: "/img/enseval2.jpg", 
                     name: "Enseval Insurance", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 12, 
@@ -110,7 +110,7 @@ const createstore = () => {
                     img1: "/img/kmi1.jpg", 
                     img2: "/img/kmi2.jpg", 
                     name: "KMI Wire & Cable", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 13, 
@@ -119,7 +119,7 @@ const createstore = () => {
                     img1: "/img/pjb1.jpg", 
                     img2: "/img/pjb2.jpg", 
                     name: "PJB Indonesia", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 14, 
@@ -128,7 +128,7 @@ const createstore = () => {
                     img1: "/img/marein.jpg", 
                     img2: "/img/marein1.jpg", 
                     name: "Marein Insurance", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 15, 
@@ -200,7 +200,7 @@ const createstore = () => {
                     img1: "/img/waskita1.jpg", 
                     img2: "/img/waskita2.jpg", 
                     name: "Waskita Realty", 
-                    tags: ['ALL', 'ANNUAL-REPORT']
+                    tags: ['ALL', 'GRAPHIC']
                 },
                 {
                     id: 23, 
@@ -218,26 +218,53 @@ const createstore = () => {
                     img1: "/img/new/dunlop-leaflet.jpg", 
                     img2: "/img/new/dunlop-leaflet.jpg", 
                     name: "Dunlop", 
-                    tags: ['ALL', 'GRAPHIC']
+                    tags: ['ALL', 'WEB']
                 },  
                 {
                     id: 25, 
-                    title: "GRAPHIC", 
+                    title: "WEB", 
                     url: "/img/new/Showcase-Devices-Presentation.jpg", 
                     img1: "/img/new/Showcase-Devices-Presentation.jpg", 
                     img2: "/img/new/Showcase-Devices-Presentation.jpg", 
                     name: "Antv Klik", 
-                    tags: ['ALL', 'GRAPHIC']
+                    tags: ['ALL', 'WEB']
                 },      
                 {
                     id: 26, 
-                    title: "GRAPHIC", 
+                    title: "WEB", 
                     url: "/img/new/web2.jpg", 
                     img1: "/img/new/web2.jpg", 
                     img2: "/img/new/web2.jpg", 
                     name: "Bay Shore Systems Inc.", 
-                    tags: ['ALL', 'GRAPHIC']
-                },                                                        
+                    tags: ['ALL', 'WEB']
+                },    
+                {
+                    id: 27, 
+                    title: "WEB", 
+                    url: "/img/hut28.jpg", 
+                    img1: "/img/hut28.jpg", 
+                    img2: "/img/hut28.jpg", 
+                    name: "Campaign HUT 28 ANTV", 
+                    tags: ['ALL', 'WEB']
+                },  
+                {
+                    id: 28, 
+                    title: "WEB", 
+                    url: "/img/web3.jpg", 
+                    img1: "/img/web3.jpg", 
+                    img2: "/img/web3.jpg", 
+                    name: "Antvklik Ramadhan", 
+                    tags: ['ALL', 'WEB']
+                },   
+                {
+                    id: 29, 
+                    title: "WEB", 
+                    url: "/img/ramadan.jpg", 
+                    img1: "/img/ramadan.jpg", 
+                    img2: "/img/ramadan.jpg", 
+                    name: "Ramadhan", 
+                    tags: ['ALL', 'WEB']
+                },                                                                                                        
             ], 
         },
         mutations: {

@@ -51,11 +51,13 @@
         <Gallery />
       </section>  
     <!-- </div> -->
+    <Footer />
   </section>
 </template>
 
 <script>
 import Gallery from '~/components/gallery.vue';
+import Footer from '~/components/footer.vue';
 
 export default {
   data() {
@@ -64,6 +66,7 @@ export default {
   },
   components: {
     Gallery,
+    Footer
   },
   asyncData () {
     return new Promise((resolve) => {
