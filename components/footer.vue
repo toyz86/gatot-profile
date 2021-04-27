@@ -17,7 +17,7 @@
         <i class="fa fa-whatsapp" aria-hidden="true"></i> +62 856791 6365
       </div>
 
-      <span class="rights">© 2020 Gatot Prastyo. All Rights Reserved.</span>
+      <span class="rights">© 2021 Gatot Prastyo. All Rights Reserved.</span>
     </div>
     <!-- <div class="row">
       <div class="col-4">
