@@ -1,6 +1,9 @@
 <template>
   <section class="home-page" id="home-page">
     <!-- <div class="container-fluid"> -->
+
+    <div class="page-loader d-flex justify-content-center align-items-center" id="page-loader">
+    </div>
       
       <div class="main-page">
         <!-- <Header /> -->
@@ -53,7 +56,6 @@
 
 <script>
 import Gallery from '~/components/gallery.vue';
-// import Header from '~/components/header.vue';
 
 export default {
   data() {
@@ -62,7 +64,6 @@ export default {
   },
   components: {
     Gallery,
-    // Header
   },
   asyncData () {
     return new Promise((resolve) => {
@@ -71,5 +72,14 @@ export default {
       }, 1000)
     })
   },
+  mounted() {
+    this.onLoading();
+  },
+  methods: {
+    onLoading() {
+      const loader = document.getElementById('page-loader');
+      loader.classList.add('p-hidden');
+    },    
+  }
 }
 </script>

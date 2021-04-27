@@ -1,12 +1,12 @@
 <template>
   <section class="menu-head">
-    <header class="wrap d-flex align-items-center">
+    <header class="wrap d-flex align-items-center" id="header">
       <a href="/" class="name-title">Gatot Prastyo</a>
       <div class="header-socmed">
-        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://web.facebook.com/toyzefbean/" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://api.whatsapp.com/send?phone=628567916365" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a>    
+        <a href="https://www.linkedin.com/in/gatot-prastyo-56572641/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/toyz86" target="_blank"><i class="fa fa-github"></i></a>    
       </div>
 
       <input id="hamburger" class="hamburger" type="checkbox"/>
@@ -20,10 +20,10 @@
           <li><nuxt-link to="/#portfolio">Works</nuxt-link></li>
           <li><nuxt-link to="/about">About</nuxt-link></li>
           <div v-if="isMobileSize()" class="socmed-nav d-flex justify-content-center">
-            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://web.facebook.com/toyzefbean/" target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://api.whatsapp.com/send?phone=628567916365" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/gatot-prastyo-56572641/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/toyz86" target="_blank"><i class="fa fa-github"></i></a></li>
           </div>          
         </ul>
       </div>    
@@ -42,6 +42,7 @@ export default {
   mounted() {
     window.innerWidth = this.isMobileSize;
     window.onclick = this.isNavOpen;
+    window.onscroll = this.isPageScrolled;
   },
   methods: {
     hideNav() {
@@ -65,6 +66,14 @@ export default {
         backDrop.classList.remove('blurin');
       }
     },
+    isPageScrolled() {
+      const header = document.getElementById("header");
+      if (window.pageYOffset > 50) {
+        header.classList.add("expanded");
+      } else {
+        header.classList.remove("expanded");
+      }
+    }
   }
 }
 </script>

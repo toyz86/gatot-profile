@@ -79,10 +79,12 @@
 
             &:hover {
                 background-color: #fe4d5a;
+                border: 1px solid #fe4d5a;
                 color: white;
             }
             &.active {
                 background-color: #fe4d5a;
+                border: 1px solid #fe4d5a;
                 color: white;
             }
         }

@@ -39,6 +39,7 @@
     font-size: 30px;
     font-family: sans-serif;
     z-index: 1000;
+    transition: 0.6s;
   }
   .spinner {
     margin: 100px auto;

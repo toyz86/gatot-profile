@@ -8,10 +8,10 @@
     </div>
 
     <div class="footer-bottom" style="margin-top: 40px">
-      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://web.facebook.com/toyzefbean/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=628567916365" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/gatot-prastyo-56572641/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/toyz86" target="_blank"><i class="fa fa-github"></i></a>
       
       <div class="footer-title">
         <i class="fa fa-whatsapp" aria-hidden="true"></i> +62 856791 6365
