@@ -17,7 +17,7 @@
       <div class="drawer-list">
         <ul @click="hideNav()">
           <li><nuxt-link to="/">Home</nuxt-link></li>
-          <li><nuxt-link to="/#portfolio">Works</nuxt-link></li>
+          <li><nuxt-link to="/#gallery">Works</nuxt-link></li>
           <li><nuxt-link to="/about">About</nuxt-link></li>
           <div v-if="isMobileSize()" class="socmed-nav d-flex justify-content-center">
             <li><a href="https://web.facebook.com/toyzefbean/" target="_blank"><i class="fa fa-facebook"></i></a></li>

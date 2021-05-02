@@ -38,18 +38,12 @@
             </div>
             <p class="title__lead js-letter" style="transform: translateX(0%) translateZ(0px);">graphic /<br>web designer.</p>
           </div>
-        </div>              
-        
-        <!-- <div class="d-flex justify-content-center">
-          <vue-typed-js :strings="['Hi, My name is <b>Gatot Prastyo</b>, I’m a Graphic Designer and Frontend Developer enthusiast living in Bogor, Indonesia.']">
-            <h1><span class="typing"></span></h1>
-          </vue-typed-js>
-        </div> -->
+        </div>
 
       </div>     
-      <section class="portfolio" id="portfolio">
+      <!-- <section class="portfolio" id="portfolio"> -->
         <Gallery />
-      </section>  
+      <!-- </section>   -->
     <!-- </div> -->
     <Footer />
   </section>
