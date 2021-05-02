@@ -48,7 +48,7 @@ export default {
   ** Global CSS
   */
   css: [
-    { src: '~/assets/scss/main.scss', lang: 'scss'}
+    { src: '~/assets/scss/main.scss', lang: 'scss'},
   ],
 
   loading: '~/components/loading.vue',
@@ -58,14 +58,18 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { 
-      src: '~plugins/vueTyped.js', 
-      ssr: false 
-    },
     {
       src: '~plugins/bootstrap.js',
       ssr: true,
     },    
+    {
+      src: '~plugins/isotope.js',
+      ssr: false
+    },    
+    {
+      src: '~plugins/cool-lightbox.js',
+      ssr: false
+    },        
   ],
   /*
   ** Auto import components
