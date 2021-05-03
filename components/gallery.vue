@@ -18,6 +18,7 @@
     <client-only>
       <isotope ref="cpt" id="root_isotope" 
         :item-selector="'element-item'" 
+        v-images-loaded:on.progress="layout"
         :list="images" 
         :options='option' 
         @filter="filterOption=arguments[0]" 
@@ -34,15 +35,15 @@
 
 <script>
 import { mapState } from 'vuex';
-import Loading from '~/components/loading.vue'
+import Loading from '~/components/loading.vue';
 
 export default {
   data() {
     return {      
       // currentTag: 'ALL',
-      // layouts: [
-      //   "masonry",
-      // ],      
+      layouts: [
+        "masonry",
+      ],      
       index: null,
       currentLayout: 'masonry',
       selected: null,
@@ -74,23 +75,23 @@ export default {
     ...mapState([
       'images'
     ]),    
-    // filteredItems () {
-    //   var filter = this.currentTag;
-    //   return this.images.filter(function(item) {
-    //       return item.tags.indexOf(filter) !== -1;
-    //   });
-    // },
-    // onloading() {
-    //   return (this.images.length <= 0)
-    // }
+  },
+  mounted() {
+    this.onLoadIsotope();
   },
   methods: {
     filter: function(key) {
     	this.$refs.cpt.filter(key);
-    },    
-    // filter (tag) {
-    //   this.currentTag = tag;
-    // }
+    },
+    layout () {
+      this.$refs.cpt.layout('masonry');
+    },     
+
+    onLoadIsotope() {
+      if (process.browser) {
+        console.log('duarrrr');
+      }
+    }
   }  
 }
 </script>

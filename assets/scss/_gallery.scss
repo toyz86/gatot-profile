@@ -87,6 +87,7 @@
     }   
     #root_isotope {
         margin: 0.5em -0.5em;
+
         @media(max-width: 480px) {
             margin: 0 -0.5em;
         }
@@ -98,14 +99,16 @@
         }    
     
         .element-item {
+            position: relative;
             margin: 0.5em;
             width: calc(33.3% - 1em);
-            min-width: 100px;
+            height: auto;
             text-align: center;
             transition: box-shadow 0.2s;
             cursor: pointer;
-            display: inline-block;
-    
+            background-color: #252525;
+            // display: inline-block;
+
             @media(max-width: 767px) {
                 width: calc(50% - 1em);
             }

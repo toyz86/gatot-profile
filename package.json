@@ -15,6 +15,7 @@
     "sass-loader": "^10.0.0",
     "vue-awesome-swiper": "^4.1.1",
     "vue-cool-lightbox": "^2.7.3",
+    "vue-images-loaded": "^1.1.2",
     "vueisotope": "^3.1.2",
     "vuex": "^3.5.1"
   },

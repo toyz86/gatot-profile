@@ -67,6 +67,10 @@ export default {
       ssr: false
     },    
     {
+      src: '~plugins/images-loaded.js',
+      ssr: false
+    },      
+    {
       src: '~plugins/cool-lightbox.js',
       ssr: false
     },        
