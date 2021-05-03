@@ -73,6 +73,10 @@ export default {
     {
       src: '~plugins/cool-lightbox.js',
       ssr: false
+    },   
+    {
+      src: '~plugins/scrollTop.js',
+      ssr: false
     },        
   ],
   /*

@@ -4,6 +4,11 @@
 
     <div class="page-loader d-flex justify-content-center align-items-center" id="page-loader">
     </div>
+    <!-- <no-ssr> -->
+      <back-to-top bottom="100px" right="50px">
+        <button type="button" class="btn btn-danger btn-to-top"><i class="fa fa-chevron-up"></i></button>
+      </back-to-top>
+    <!-- </no-ssr> -->
       
       <div class="main-page">
         <!-- <Header /> -->
