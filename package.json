@@ -1,6 +1,7 @@
 {
   "name": "gatot-profile",
   "version": "1.0.0",
+  "homepage": "https://gatot-prastyo.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",
