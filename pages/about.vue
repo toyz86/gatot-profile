@@ -41,6 +41,11 @@
 <script>
 import Footer from '~/components/footer.vue';
 export default {
+  head() {
+    return {
+      title: 'About | Gatot Prastyo',
+    }
+  },  
   components: {
     Footer
   },

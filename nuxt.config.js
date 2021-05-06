@@ -15,11 +15,22 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
+    htmlAttrs: {
+      lang: 'id'
+    },    
+    // title: process.env.npm_package_name || '',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Gatot Prastyo Personal Portfolio' },
+      // { name: 'description', content: 'Gatot Prastyo' },
+      { property: 'og:title', content: 'Gatot Prastyo' },
+      { property: 'og:description', content: 'Gatot Prastyo Portfolio' },
+      { property: 'og:url', content: 'https://www.gatot-prastyo.com' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: '/android-chrome-512x512.png' },
+      { name: 'keywords', content: 'gatot, gatot prastyo, gatot prasetyo, prastyo, toyz86, gatot prastyo portfolio, portfolio design, jasa desain, design service' },
     ],
     link: [
       { 
@@ -27,6 +38,11 @@ export default {
         type: 'image/x-icon', 
         href: '/img/icon-profile.png'
       },
+      { 
+        hid: 'canonical',
+        rel: 'canonical', 
+        href: 'https://www.gatot-prastyo.com'
+      },      
       { 
         rel: 'stylesheet', 
         type: 'text/css', 

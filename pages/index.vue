@@ -59,6 +59,11 @@ import Gallery from '~/components/gallery.vue';
 import Footer from '~/components/footer.vue';
 
 export default {
+  head() {
+    return {
+      title: 'Gatot Prastyo | Portfolio',
+    }
+  },
   data() {
     return {
     }
