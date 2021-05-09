@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/gaty8958/public_html/git
+    - export DEPLOYPATH=/home/gaty8958/repositories/gatot-profile
     - /bin/cp -r * $DEPLOYPATH
