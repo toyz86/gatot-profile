@@ -4,6 +4,10 @@
 
     <div class="page-loader d-flex justify-content-center align-items-center" id="page-loader">
     </div>
+    <div class="page-cover" id="page-cover">
+      <div class="cover-bg bg-img" data-image-src="/img/bg_geometric.jpg"></div>
+      <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
+    </div>    
     <!-- <no-ssr> -->
       <back-to-top bottom="100px" right="50px">
         <button type="button" class="btn btn-danger btn-to-top"><i class="fa fa-chevron-up"></i></button>
@@ -81,12 +85,21 @@ export default {
   },
   mounted() {
     this.onLoading();
+    window.onscroll = this.fadingCover;
   },
   methods: {
     onLoading() {
       const loader = document.getElementById('page-loader');
       loader.classList.add('p-hidden');
-    },    
+    },
+    fadingCover() {
+      const cover = document.getElementById("page-cover");
+      if (window.pageYOffset > 60) {
+        cover.classList.add("fading");
+      } else {
+        cover.classList.remove("fading");
+      }
+    }    
   }
 }
 </script>

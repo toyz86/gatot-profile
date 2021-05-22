@@ -24,6 +24,9 @@ export default {
 }
 </script>
 <style>
+body {
+  font-family: 'Poppins';
+}
 html {
   background: #000;
   font-family:

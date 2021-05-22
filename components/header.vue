@@ -42,7 +42,8 @@ export default {
   mounted() {
     window.innerWidth = this.isMobileSize;
     window.onclick = this.isNavOpen;
-    window.onscroll = this.isPageScrolled;
+    window.addEventListener('scroll', this.isPageScrolled);
+    // window.onscroll = this.isPageScrolled;
   },
   methods: {
     hideNav() {
@@ -69,11 +70,17 @@ export default {
     isPageScrolled() {
       const header = document.getElementById("header");
       if (window.pageYOffset > 50) {
+        console.log('tes');
         header.classList.add("expanded");
       } else {
         header.classList.remove("expanded");
       }
     }
+  },
+
+  destroyed () {
+    console.log('asdasdasd');
+    window.removeEventListener('scroll', this.isPageScrolled);
   }
 }
 </script>

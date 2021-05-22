@@ -58,6 +58,11 @@ export default {
         type: 'text/css', 
         href: 'https://fonts.googleapis.com/css?family=Poppins'
       },
+      { 
+        rel: 'stylesheet', 
+        type: 'text/css', 
+        href: '//db.onlinewebfonts.com/c/49fdec8ee8568aaf58534b3ede38e294?family=Industry'
+      },      
     ]
   },
   /*
